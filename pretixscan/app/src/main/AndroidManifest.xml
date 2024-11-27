@@ -70,7 +70,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.SetupActivity"
-            android:label="@string/headline_setup" />
+            android:label="@string/headline_setup"
+            />
         <activity
             android:name=".ui.info.EventinfoActivity"
             android:label="@string/action_label_statistics"

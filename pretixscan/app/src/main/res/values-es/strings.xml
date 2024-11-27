@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">pretixSCAN</string>
-    <string name="title_activity_main">pretixSCAN</string>
-    <string name="headline_setup">¡Bienvenido a pretixSCAN!</string>
-    <string name="action_sync">Sincronizar ahora</string>
-    <string name="progress_syncing_first">Descargando la configuración de eventos…</string>
+    <string name="app_name">FeriaPase Scan</string>
+    <string name="title_activity_main">FeriaPase Scan</string>
+    <string name="headline_setup">¡Bienvenido a FeriaPase!</string>
+    <string name="action_sync">Actualizar</string>
+    <string name="progress_syncing_first">Descargando configuración del evento…</string>
+    <string name="progress_syncing">Sincronizando…</string>
     <string name="progress_processing">Procesando…</string>
-    <string name="progress_syncing">Sincronizando con el servidor…</string>
-    <string name="progress_registering">Registrando el dispositivo con el servidor…</string>
-    <string name="error_access_revoked">El acceso para este dispositivo ha sido revocado, debe registrarlo de nuevo en el servidor.</string>
-    <string name="error_unknown_exception">Ha ocurrido un error desconocido</string>
-    <string name="error_not_synchronized">El dispositivo no se ha sincronizado correctamente con el servidor</string>
+    <string name="progress_registering">Registrando dispositivo con nuestro servidor…</string>
+    <string name="error_access_revoked">Los accesos de este dispositivo han sido revocados, solicita al supervisor registrar el dispositivo nuevamente</string>
+    <string name="error_unknown_exception">Un error desconocido ha ocurrido</string>
+    <string name="error_not_synchronized">Tu dispositivo no se ha sincronizado correctamente con el servidor.</string>
     <string name="action_label_ok">OK</string>
-    <string name="action_label_settings">Configuración</string>
+    <string name="action_label_settings">Opciones</string>
     <string name="action_label_statistics">Estadísticas</string>
-    <string name="action_label_scantype_entry">Cambiar a escaneado de entradas</string>
-    <string name="action_label_scantype_exit">Cambiar a escaneo de salidas</string>
-    <string name="action_multievent_enable">Modo experto (selección de varios eventos)</string>
+    <string name="action_label_scantype_entry">Cambiar a escaneo de entrada</string>
+    <string name="action_label_scantype_exit">Cambiar a escaneo de salida</string>
+    <string name="action_multievent_enable">Modo experto (seleccionar múltiples eventos)</string>
     <string name="action_multievent_disable">Desactivar modo experto</string>
-    <string name="action_multievent_disable_error">El modo experto no puede desactivarse si se han seleccionado varios eventos.</string>
+    <string name="action_multievent_disable_error">El modo experto no se puede desactivar si se seleccionan múltiples eventos.</string>
     <string name="scantype_entry">Entrada</string>
-    <string name="scantype_exit">Salidas</string>
-    <string name="scantype_entry_kiosk">Escanear la entrada para realizar el check-in</string>
-    <string name="scantype_entry_kiosk_print">Escanear la entrada para imprimir la tarjeta</string>
-    <string name="scantype_exit_kiosk">Escanear la entrada para registrar la salida</string>
-    <string name="checktype_offline">Verificación sin conexión</string>
+    <string name="scantype_exit">Salida</string>
+    <string name="scantype_entry_kiosk">Escanea tu boleto para registrarte</string>
+    <string name="scantype_entry_kiosk_print">Escanea tu boleto para imprimir tu credencial</string>
+    <string name="scantype_exit_kiosk">Escanea tu boleto para salir</string>
     <string name="checktype_online">Verificación en línea</string>
-    <string name="checktype_proxy">Comprobación de la estación base</string>
+    <string name="checktype_offline">Verificación fuera de línea</string>
+    <string name="checktype_proxy">Verificación en estación base</string>
+    <string name="debug_info_event">Evento: %1$s</string>
     <string name="debug_info_subevent">Fecha: %1$s (%2$s)</string>
     <string name="debug_info_list">Lista: %1$s</string>
-    <string name="debug_info_event">Evento: %1$s</string>
     <string name="debug_info_gate">Puerta: %1$s</string>
     <string name="debug_info_device">Dispositivo: %1$s</string>
     <string name="action_search">Buscar</string>
@@ -37,138 +37,159 @@
     <string name="operation_select_event">Seleccionar evento</string>
     <string name="operation_select_events">Seleccionar eventos</string>
     <string name="events_selected">%s eventos seleccionados</string>
-    <plurals name="sync_status_time_minutes">
-        <item quantity="one">sincronizado hace %d minuto</item>
-        <item quantity="many">sincronizado hace %d minutos</item>
-        <item quantity="other">sincronizado hace %d minutos</item>
-    </plurals>
-    <string name="operation_select_checkinlist">Seleccionar lista de asistentes</string>
+    <string name="operation_select_checkinlist">Seleccionar lista de registro</string>
     <string name="settings_label_auto_sync">Sincronización automática</string>
     <string name="settings_label_orders_sync">Descargar pedidos</string>
-    <string name="settings_summary_orders_sync">Sin esta opción, pretixSCAN no descargará los datos de los pedidos y no podrá escanear las entradas sin conexión según la configuración predeterminada de pretix.</string>
+    <string name="settings_summary_orders_sync">Sin esta opción, FeriaPase Scan no descargará datos de pedidos y no podrá escanear boletos fuera de línea con la configuración predeterminada de pretix.</string>
     <string name="settings_label_auto_switch">Selección automática de eventos</string>
+    <string name="settings_summary_auto_switch">Con esta opción, FeriaPase Scan preguntará al servidor durante la sincronización si el servidor sugiere cambiar la aplicación a un evento y lista de registro diferentes y luego cambiará automáticamente.</string>
+    <plurals name="sync_status_time_minutes">
+        <item quantity="one">sincronizado hace %d min</item>
+        <item quantity="other">sincronizado hace %d min</item>
+    </plurals>
     <plurals name="sync_status_time_hours">
         <item quantity="one">sincronizado hace %d hora</item>
-        <item quantity="many">sincronizado hace %d horas</item>
         <item quantity="other">sincronizado hace %d horas</item>
     </plurals>
-    <string name="sync_status">Estado de sincronización</string>
     <plurals name="sync_status_time_days">
         <item quantity="one">sincronizado hace %d día</item>
-        <item quantity="many">sincronizado hace %d días</item>
         <item quantity="other">sincronizado hace %d días</item>
     </plurals>
-    <string name="sync_status_last">Última sincronización realizada con éxito:</string>
+    <string name="sync_status">Estado de sincronización</string>
+    <string name="sync_status_last">Última sincronización exitosa:</string>
     <string name="sync_status_last_failed">Última sincronización fallida:</string>
-    <string name="sync_status_never">todavía no sincronizado</string>
-    <string name="sync_status_progress">sincronización está en curso</string>
-    <string name="short_datetime_format">HH:mm MM/dd</string>
-    <string name="sync_status_now">acaba de sincronizarse</string>
+    <string name="sync_status_never">aún no sincronizado</string>
+    <string name="sync_status_progress">la sincronización está en curso</string>
+    <string name="sync_status_now">Sincronizado</string>
     <plurals name="sync_status_pending">
-        <item quantity="one">%d pendiente de subida</item>
-        <item quantity="many">%d subidas pendientes</item>
-        <item quantity="other">%d subidas pendientes</item>
+        <item quantity="one">%d pendiente</item>
+        <item quantity="other">%d pendientes</item>
     </plurals>
-    <string name="sync_status_date_format">HH:mm:ss yyyy-MM-dd</string>
-    <string name="first_scanned">Primer escaneo: %s</string>
+    <string name="sync_status_date_format">yyyy-MM-dd HH:mm:ss</string>
+    <string name="short_datetime_format">MM/dd HH:mm</string>
+    <string name="first_scanned">Primer escaneado: %s</string>
     <string name="datetime_format">%1$tY-%1$tm-%1$td %1$tH:%1$tM</string>
     <string name="ok">OK</string>
-    <string name="tutorial_setup">Para empezar, debe crear un nuevo dispositivo en la sección dispositivos de la cuenta del organizador en el backend de pretix. Una vez registrado, aparecerá un código QR de configuración que deberá escanear.</string>
-    <string name="setup_error_legacy_qr_code">El código QR escaneado sólo es valido para predecesores antiguos. Debe registrar un nuevo dispositivo en la sección «Dispositivos» de la cuenta de organizador pretix.</string>
-    <string name="setup_error_invalid_qr_code">El código QR que escaneado no es un código de configuración válido. Asegúrese de haber creado el código en la sección Dispositivos de la cuenta del organizador pretix.</string>
-    <string name="setup_error_version_too_high">El código QR que escaneado proviene de una versión más reciente de pretix. ¡Por favor, verifique si puede obtener una actualización de la aplicación!</string>
+    <string name="tutorial_setup">Para comenzar, crea un nuevo dispositivo en la sección "Dispositivos" de tu cuenta de organizador en el backend de pretix. Luego se te presentará un código QR de configuración para escanear.</string>
+    <string name="setup_error_legacy_qr_code">El código QR que escaneaste es para un antiguo predecesor de esta aplicación. Por favor, ve a la sección "Dispositivos" en tu cuenta de organizador de pretix y crea un nuevo dispositivo allí.</string>
+    <string name="setup_error_invalid_qr_code">El código QR que escaneaste no es un código de configuración válido. Asegúrate de haber creado el código en la sección "Dispositivos" de una cuenta de organizador de pretix.</string>
+    <string name="setup_error_version_too_high">El código QR que escaneaste es de una versión más nueva de pretix para la que esta aplicación fue construida. ¡Por favor, verifica si puedes obtener una actualización para esta aplicación!</string>
     <string name="setup_progress">Inicializando dispositivo…</string>
-    <string name="settings_summary_auto_switch">Con esta opción, pretixSCAN consultará al servidor durante la sincronización. Si el servidor sugiere cambia a una lista de asistentes diferente, el cambio se realizará automáticamente.</string>
-    <string name="setup_error_request">Solicitud rechazada por el servidor. Por favor, vuelva a comprobar los datos introducidos.</string>
-    <string name="setup_error_io">Error de conexión al intentar acceder al servidor.</string>
-    <string name="setup_error_ssl">Error de seguridad al intentar acceder al servidor.</string>
+    <string name="setup_error_request">Solicitud rechazada por el servidor. Por favor, verifica tu entrada.</string>
+    <string name="setup_error_io">Error de conexión al intentar alcanzar el servidor.</string>
+    <string name="setup_error_ssl">Error de seguridad al intentar alcanzar el servidor.</string>
     <string name="setup_error_server">Error del servidor al intentar registrar el dispositivo.</string>
-    <string name="setup_error_permissions">pretixSCAN no funciona correctamente sin conceder los permisos necesarios. Por favor, reinicie la aplicación.</string>
-    <string name="setup_error_response">El servidor devolvió una respuesta no válida.</string>
-    <string name="setup_error_failed">Ha fallado la prueba de conexión inicial.</string>
-    <string name="welcome_text">pretixSCAN es una aplicación que puede utilizar para validar las entradas reservadas a través de pretix.</string>
-    <string name="welcome_disclaimer1">Entiendo que los datos personales de los asistentes a mis eventos vinculados se almacenarán en este dispositivo y cuidaré el dispositivo adecuadamente.</string>
+    <string name="setup_error_response">El servidor devolvió una respuesta inválida.</string>
+    <string name="setup_error_failed">La prueba de conexión inicial falló.</string>
+    <string name="setup_error_permissions">FeriaPase Scan no funciona correctamente sin otorgar esos permisos. Por favor, reinicia la aplicación.</string>
+    <string name="welcome_text">FeriaPase Scan es una aplicación de entrada a eventos que puedes usar para validar boletos que vendiste a través de pretix.</string>
+    <string name="welcome_disclaimer1">Entiendo que los datos personales de los asistentes a mis eventos conectados se almacenarán en este dispositivo y aseguraré el dispositivo adecuadamente.</string>
     <string name="cont">CONTINUAR</string>
     <string name="hint_url">URL</string>
     <string name="hint_token">Token</string>
     <string name="dismiss">Descartar</string>
-    <string name="settings_label_verification">Comprobación de entradas</string>
+    <string name="settings_label_verification">Verificación de boletos</string>
     <string name="settings_label_sync">Sincronización</string>
-    <string name="settings_label_licenses">Autores y licencias</string>
     <string name="settings_label_ui">Interfaz de usuario</string>
     <string name="settings_label_about">Acerca de esta aplicación</string>
-    <string name="settings_label_device_camera">Utilizar la cámara del dispositivo</string>
-    <string name="settings_label_scan_offline">Escaneado sin conexión</string>
-    <string name="settings_label_auto_offline">Activar y desactivar automáticamente el modo sin conexión</string>
-    <string name="settings_label_auto_offline_help">Si selecciona una duración, la aplicación cambiará automáticamente a un escaneo sin conexión si el tiempo de escaneo en línea tarda más del tiempo seleccionado. Además, la aplicación cambiará al modo sin conexión cuando fallen varios escaneos o tarden más tiempo seleccionado. Cuando la conexión vuelva a ser estable, la aplicación volverá a cambiar al modo en linea.</string>
+    <string name="settings_label_licenses">Autor y licencias</string>
+    <string name="settings_label_device_camera">Usar cámara del dispositivo</string>
+    <string name="settings_label_scan_offline">Escaneo fuera de línea</string>
+    <string name="settings_label_auto_offline">Activar y desactivar modo fuera de línea automáticamente</string>
+    <string name="settings_label_auto_offline_help">Si seleccionas uno de los tiempos a continuación, la aplicación cambiará automáticamente a un escaneo fuera de línea siempre que un escaneo en línea tarde más de lo seleccionado. Además, la aplicación cambiará completamente al modo fuera de línea después de que múltiples escaneos hayan fallado o tardado más de lo seleccionado. Una vez que la conexión haya demostrado ser estable nuevamente, la aplicación cambiará de nuevo.</string>
+    <string-array name="settings_valuelabels_auto_offline">
+        <item>Modo manual (apagado)</item>
+        <item>1 segundo o errores</item>
+        <item>2 segundos o errores</item>
+        <item>3 segundos o errores</item>
+        <item>5 segundos o errores</item>
+        <item>10 segundos o errores</item>
+        <item>15 segundos o errores</item>
+        <item>20 segundos o errores</item>
+        <item>Solo errores o pérdida de conexión</item>
+    </string-array>
+    <string name="settings_summary_scan_offline">Al escanear fuera de línea, tu dispositivo verificará todas las entradas con su base de datos interna en lugar de con el servidor y sincronizará su base de datos con el servidor ocasionalmente. Esto es más confiable, pero permite que un boleto se escanee dos veces si escaneas con múltiples dispositivos.</string>
     <string name="settings_label_sounds">Reproducir sonidos</string>
-    <string name="settings_label_hide_names">Ocultar nombres y otros datos personales</string>
-    <string name="settings_label_hide_names_summary">No afecta a la búsqueda, útil, por ejemplo, en combinación con el modo quiosco</string>
-    <string name="preference_badges_twice">Imprimir dos veces cada tarjeta</string>
+    <string name="settings_label_hide_names">Ocultar nombres y otra información personal</string>
+    <string name="settings_label_hide_names_summary">No afecta la búsqueda, útil por ejemplo en combinación con el modo quiosco</string>
+    <string name="settings_label_badges">Credenciales</string>
+    <string name="preference_badges_twice">Imprimir cada credencial dos veces</string>
     <string name="settings_label_details">Detalles</string>
-    <string name="settings_label_badges">Tarjeta de identificación</string>
-    <string name="settings_summary_scan_offline">Al escanear sin conexión, su dispositivo comprobará todas las entradas con su base de datos interna en lugar de hacerlo con el servidor y sincronizará la base de datos con el servidor de vez en cuando. Esto es más fiable, pero permite escanear una entrada dos veces si se escanea con varios dispositivos.</string>
-    <string name="question_input_required">Campo obligatorio.</string>
-    <string name="yes">Si</string>
-    <string name="pref_unpaid_ask">Preguntar antes de cobrar las entradas no pagadas</string>
-    <string name="pref_ignore_questions">No hacer preguntas durante el check-in</string>
-    <string name="question_validation_error">Algunas de sus respuestas no han podido ser validadas.</string>
-    <string name="question_input_invalid">Este dato no es válido.</string>
-    <string name="pref_unpaid_ask_summary">Cuando la lista de asistentes está configurada para incluir pedidos pendientes, esta opción le preguntará si ya están registrando.</string>
-    <string name="status_unpaid">Sin pagar</string>
-    <string name="status_canceled">Cancelado</string>
-    <string name="status_valid">Válido</string>
+    <string name="pref_unpaid_ask">Preguntar antes de registrar boletos no pagados</string>
+    <string name="pref_ignore_questions">No hacer preguntas durante el registro</string>
+    <string name="pref_unpaid_ask_summary">Cuando la lista de registro está configurada para incluir pedidos pendientes, esta configuración controla si se te preguntará antes de registrarlos.</string>
+    <string name="question_validation_error">Algunos de tus datos no pudieron ser validados.</string>
+    <string name="question_input_required">Este campo es obligatorio.</string>
+    <string name="question_input_invalid">Esta entrada no es válida.</string>
+    <string name="yes">Sí</string>
     <string name="cancel">Cancelar</string>
     <string name="status_redeemed">Canjeado</string>
-    <string name="scan_result_valid">Entrada válida</string>
-    <string name="status_empty">No se han encontrado resultado. Asegúrese de introducir al menos cuatro caracteres.</string>
+    <string name="status_unpaid">No pagado</string>
+    <string name="status_canceled">Cancelado</string>
+    <string name="status_valid">Válido</string>
+    <string name="status_empty">No se han encontrado resultados de búsqueda. Asegúrate de ingresar al menos cuatro caracteres.</string>
+    <string name="scan_result_valid">Boleto válido</string>
     <string name="scan_result_exit">Salida registrada</string>
-    <string name="scan_result_used">Entrada ya utilizada</string>
+    <string name="scan_result_used">Boleto ya usado</string>
     <string name="scan_result_questions">Información requerida</string>
-    <string name="scan_result_invalid">Entrada no válida</string>
-    <string name="scan_result_product">Tipo de entrada no válida</string>
-    <string name="scan_result_unpaid">Entrada no pagada</string>
-    <string name="scan_result_rules">Entrada no autorizada</string>
-    <string name="scan_result_ambiguous">El código de entrada ambigua</string>
-    <string name="scan_result_revoked">Código de entrada revocada/modificada</string>
-    <string name="scan_result_unapproved">Pedido no autorizado</string>
-    <string name="scan_result_invalid_time">Entrada no válida en este momento</string>
-    <string name="scan_result_blocked">Entrada bloqueada</string>
+    <string name="scan_result_invalid">Boleto inválido</string>
+    <string name="scan_result_product">Tipo de boleto no válido aquí</string>
+    <string name="scan_result_unpaid">Boleto no pagado</string>
+    <string name="scan_result_rules">Boleto inválido</string>
+    <string name="scan_result_ambiguous">El código del boleto es ambiguo en la lista</string>
+    <string name="scan_result_revoked">Código de boleto revocado/cambiado</string>
+    <string name="scan_result_unapproved">Pedido no aprobado</string>
+    <string name="scan_result_invalid_time">Boleto actualmente no válido</string>
+    <string name="scan_result_blocked">Boleto bloqueado</string>
     <string name="scan_result_canceled">Pedido cancelado</string>
     <string name="error_sync_in_background">Ya se está ejecutando una sincronización en segundo plano.</string>
     <string name="dialog_unpaid_title">Pedido no pagado</string>
+    <string name="dialog_unpaid_text">Este boleto pertenece a un pedido que aún no ha sido pagado. ¿Aún quieres registrarlo? Esto no marcará el pedido como pagado.</string>
     <string name="dialog_unpaid_retry">Registrar de todos modos</string>
-    <string name="preference_badgeprint_enable">Activar la impresión de tarjetas</string>
-    <string name="dialog_unpaid_text">Esta entrada pertenece a un pedido que aún no ha sido pagado. ¿ Desea realizar el check-in? Esto no marcará el pedido como pagado.</string>
-    <string name="preference_badgeprint_install_pretixprint">La impresión de tarjetas requiere la aplicación pretixPRINT. Desea instalarla?</string>
-    <string name="preference_autobadgeprint_enable">Imprimir los identificadores automáticamente</string>
+    <string name="preference_badgeprint_enable">Habilitar impresión de credenciales</string>
+    <string name="preference_autobadgeprint_enable">Imprimir credenciales automáticamente después de un escaneo exitoso</string>
+    <string name="preference_badgeprint_install_pretixprint">La impresión de credenciales requiere la aplicación separada pretixPRINT. ¿Quieres instalarla?</string>
     <string name="already_scanned">ya escaneado</string>
-    <string name="total_tickets_sold">total de entradas reservadas</string>
-    <string name="hardware_scanner_switch_to_camera">Utilizar la cámara en su lugar</string>
+    <string name="total_tickets_sold">total de boletos vendidos</string>
+    <string name="ticket_attention">¡Atención, boleto especial!</string>
+    <string name="hardware_scanner">Por favor, presiona los botones de escaneo de hardware de tu dispositivo para escanear.</string>
+    <string name="hardware_scanner_switch_to_camera">Usar cámara en su lugar</string>
     <string name="force_full_resync">Forzar una sincronización completa</string>
-    <string name="settings_label_datawedge">Instalar el perfil DataWedge</string>
+    <string name="settings_label_datawedge">Instalar perfil DataWedge</string>
     <string name="settings_label_version">Versión</string>
-    <string name="ticket_attention">¡Atención, entrada especial!</string>
-    <string name="hardware_scanner">Por favor, pulsar los botones de escaneo de su dispositivo para escanear.</string>
-    <string name="full_delete_confirm">¿Desea reiniciar el dispositivo? Deberá volver a emparejarlo de nuevo.</string>
-    <string name="force_full_resync_help">Esto no borrará sus datos locales, pero forzará a que la próxima sincronización de cada evento sea una sincronización completa, es decir, que se descarguen de nuevo todos los datos en lugar de sólo los modificados.</string>
-    <string name="settings_label_troubleshooting">Resolución de problemas</string>
-    <string name="full_delete">Borrar todos los datos locales y reiniciar el dispositivo</string>
-    <string name="label_shop_active">Activa</string>
+    <string name="settings_label_troubleshooting">Solución de problemas</string>
+    <string name="force_full_resync_help">Esto no eliminará ninguno de tus datos locales, pero forzará que la próxima sincronización de cada evento sea una sincronización completa, es decir, descargando todos los datos nuevamente en lugar de solo los datos cambiados.</string>
+    <string name="full_delete">Eliminar todos los datos locales y restablecer el dispositivo</string>
+    <string name="full_delete_confirm">¿Realmente quieres restablecer el dispositivo? Necesitarás emparejarlo nuevamente con el sistema en línea.</string>
+    <string name="label_shop_active">Activo</string>
     <string name="label_shop_inactive">Tienda desactivada</string>
-    <string name="pin_protection_enable">Activar la protección por PIN</string>
-    <string name="pin_protection_settings">Proteger los ajustes de la aplicación</string>
-    <string name="pin_protection_statistics">Proteger las estadísticas</string>
-    <string name="pin_protection_switch_event">PIN requerido para cambiar de evento</string>
-    <string name="pin_protection_switch_mode">Interruptor de modo de protección</string>
-    <string name="pin_protection">Protección por PIN</string>
+    <string name="settings_label_search_disable">Desactivar búsqueda</string>
+    <string name="settings_label_kioskmode">Modo quiosco</string>
+    <string name="settings_summary_kioskmode">El modo quiosco oculta menús que no se supone que se usen en una instalación de autoservicio. El modo quiosco no impide que los usuarios salgan de la aplicación a través de funciones del sistema. Para acceder a la configuración, necesitas escanear un código QR con tu PIN.</string>
+    <string name="pin_protection">Protección con PIN</string>
     <string name="pin_protection_pin">Establecer PIN</string>
-    <string name="pin_protection_enter">Introducir PIN</string>
-    <string name="currently_inside">asiste actualmente</string>
-    <string name="event_select_calendar">Ver calendario</string>
-    <string name="settings_label_kioskmode">Modo kiosco</string>
-    <string name="settings_label_search_disable">Deshabilitar búsqueda</string>
-    <string name="setup_grant_camera_permission">Debe conceder permisos para utilizar la cámara y escáner QR</string>
-    <string name="error_no_available_events">No se ha encontrado ningún evento presente o futuro. Compruebe las fechas y los derechos de acceso de los eventos.</string>
-    <string name="settings_summary_kioskmode">El modo Kiosko oculta los menús que no deben utilizarse en una instalación de autoservicio. El modo Kiosko no impide que los usuarios salgan de la app a través de las funciones del sistema. Para acceder a los ajustes, es necesario escanear un código QR junto con el PIN.</string>
+    <string name="pin_protection_enable">Habilitar protección con PIN</string>
+    <string name="pin_protection_settings">Proteger configuración de la aplicación</string>
+    <string name="pin_protection_statistics">Proteger estadísticas</string>
+    <string name="pin_protection_switch_event">Proteger cambio de evento</string>
+    <string name="pin_protection_switch_mode">Proteger cambio de modo</string>
+    <string name="pin_protection_enter">Ingresar PIN</string>
+    <string name="currently_inside">asistiendo actualmente</string>
+    <string name="error_no_available_events">No se pudo encontrar ningún evento actual o futuro. Por favor, verifica las fechas y los derechos de acceso de tus eventos.</string>
+    <string name="event_select_calendar">Mostrar calendario</string>
+    <string name="setup_grant_camera_permission">Por favor, otorga permiso para usar la cámara para el escáner QR</string>
+    <string-array name="settings_valuelabels_auto_print_badges">
+        <item>No, only when button is pressed</item>
+        <item>Once, if not yet printed</item>
+        <item>Always</item>
+        <item>Modo manual (apagado)</item>
+        <item>1 segundo o errores</item>
+        <item>2 segundos o errores</item>
+        <item>3 segundos o errores</item>
+        <item>5 segundos o errores</item>
+        <item>10 segundos o errores</item>
+        <item>15 segundos o errores</item>
+        <item>20 segundos o errores</item>
+        <item>Solo errores o pérdida de conexión</item>
+    </string-array>
 </resources>

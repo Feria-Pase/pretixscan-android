@@ -1,185 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">pretixSCAN</string>
-    <string name="title_activity_main">pretixSCAN</string>
-    <string name="headline_setup">Welcome to pretixSCAN!</string>
-    <string name="action_sync">Synchronize now</string>
-    <string name="progress_syncing_first">Downloading event configuration…</string>
-    <string name="progress_syncing">Synchronizing with server…</string>
-    <string name="progress_processing">Processing…</string>
-    <string name="progress_registering">Registering device with server…</string>
-    <string name="error_access_revoked">Device access has been revoked, you need to register the device with the server again.</string>
-    <string name="error_unknown_exception">An unknown error has occurred</string>
-    <string name="error_not_synchronized">Your device has not been properly synchronized with the server</string>
+    <string name="app_name">FeriaPase Scan</string>
+    <string name="title_activity_main">FeriaPase Scan</string>
+    <string name="headline_setup">¡Bienvenido a FeriaPase!</string>
+    <string name="action_sync">Actualizar</string>
+    <string name="progress_syncing_first">Descargando configuración del evento…</string>
+    <string name="progress_syncing">Sincronizando…</string>
+    <string name="progress_processing">Procesando…</string>
+    <string name="progress_registering">Registrando dispositivo con nuestro servidor…</string>
+    <string name="error_access_revoked">Los accesos de este dispositivo han sido revocados, solicita al supervisor registrar el dispositivo nuevamente</string>
+    <string name="error_unknown_exception">Un error desconocido ha ocurrido</string>
+    <string name="error_not_synchronized">Tu dispositivo no se ha sincronizado correctamente con el servidor.</string>
     <string name="action_label_ok">OK</string>
-    <string name="action_label_settings">Settings</string>
-    <string name="action_label_statistics">Statistics</string>
-    <string name="action_label_scantype_entry">Switch to entry scanning</string>
-    <string name="action_label_scantype_exit">Switch to exit scanning</string>
-    <string name="action_multievent_enable">Expert mode (select multiple events)</string>
-    <string name="action_multievent_disable">Disable expert mode</string>
-    <string name="action_multievent_disable_error">Expert mode cannot be disabled if multiple events are selected.</string>
-    <string name="scantype_entry">Entry</string>
-    <string name="scantype_exit">Exit</string>
-    <string name="scantype_entry_kiosk">Scan your ticket to check in</string>
-    <string name="scantype_entry_kiosk_print">Scan your ticket to print your badge</string>
-    <string name="scantype_exit_kiosk">Scan your ticket to check out</string>
-    <string name="checktype_online">Online verification</string>
-    <string name="checktype_offline">Offline verification</string>
-    <string name="checktype_proxy">Base station verification</string>
-    <string name="debug_info_event">Event: %1$s</string>
-    <string name="debug_info_subevent">Date: %1$s (%2$s)</string>
-    <string name="debug_info_list">List: %1$s</string>
-    <string name="debug_info_gate">Gate: %1$s</string>
-    <string name="debug_info_device">Device: %1$s</string>
-    <string name="action_search">Search</string>
-    <string name="action_manual">Manual setup</string>
-    <string name="operation_select_event">Select Event</string>
-    <string name="operation_select_events">Select Events</string>
-    <string name="events_selected">%s events selected</string>
-    <string name="operation_select_checkinlist">Select Check-in list</string>
-    <string name="settings_label_auto_sync">Automatic Synchronization</string>
-    <string name="settings_label_orders_sync">Download orders</string>
-    <string name="settings_summary_orders_sync">Without this option, pretixSCAN will not download order data and not be able to scan offline tickets with pretix\'s default settings.</string>
-    <string name="settings_label_auto_switch">Automatic event selection</string>
-    <string name="settings_summary_auto_switch">With this option, pretixSCAN will ask the server during synchronization if the server suggests switching the app to a different event and check-in list and then switches automatically.</string>
+    <string name="action_label_settings">Opciones</string>
+    <string name="action_label_statistics">Estadísticas</string>
+    <string name="action_label_scantype_entry">Cambiar a escaneo de entrada</string>
+    <string name="action_label_scantype_exit">Cambiar a escaneo de salida</string>
+    <string name="action_multievent_enable">Modo experto (seleccionar múltiples eventos)</string>
+    <string name="action_multievent_disable">Desactivar modo experto</string>
+    <string name="action_multievent_disable_error">El modo experto no se puede desactivar si se seleccionan múltiples eventos.</string>
+    <string name="scantype_entry">Entrada</string>
+    <string name="scantype_exit">Salida</string>
+    <string name="scantype_entry_kiosk">Escanea tu boleto para registrarte</string>
+    <string name="scantype_entry_kiosk_print">Escanea tu boleto para imprimir tu credencial</string>
+    <string name="scantype_exit_kiosk">Escanea tu boleto para salir</string>
+    <string name="checktype_online">Verificación en línea</string>
+    <string name="checktype_offline">Verificación fuera de línea</string>
+    <string name="checktype_proxy">Verificación en estación base</string>
+    <string name="debug_info_event">Evento: %1$s</string>
+    <string name="debug_info_subevent">Fecha: %1$s (%2$s)</string>
+    <string name="debug_info_list">Lista: %1$s</string>
+    <string name="debug_info_gate">Puerta: %1$s</string>
+    <string name="debug_info_device">Dispositivo: %1$s</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_manual">Configuración manual</string>
+    <string name="operation_select_event">Seleccionar evento</string>
+    <string name="operation_select_events">Seleccionar eventos</string>
+    <string name="events_selected">%s eventos seleccionados</string>
+    <string name="operation_select_checkinlist">Seleccionar lista de registro</string>
+    <string name="settings_label_auto_sync">Sincronización automática</string>
+    <string name="settings_label_orders_sync">Descargar pedidos</string>
+    <string name="settings_summary_orders_sync">Sin esta opción, pretixSCAN no descargará datos de pedidos y no podrá escanear boletos fuera de línea con la configuración predeterminada de pretix.</string>
+    <string name="settings_label_auto_switch">Selección automática de eventos</string>
+    <string name="settings_summary_auto_switch">Con esta opción, pretixSCAN preguntará al servidor durante la sincronización si el servidor sugiere cambiar la aplicación a un evento y lista de registro diferentes y luego cambiará automáticamente.</string>
     <plurals name="sync_status_time_minutes">
-        <item quantity="one">synchronized %d minute ago</item>
-        <item quantity="other">synchronized %d minutes ago</item>
+        <item quantity="one">sincronizado hace %d min</item>
+        <item quantity="other">sincronizado hace %d min</item>
     </plurals>
     <plurals name="sync_status_time_hours">
-        <item quantity="one">synchronized %d hour ago</item>
-        <item quantity="other">synchronized %d hours ago</item>
+        <item quantity="one">sincronizado hace %d hora</item>
+        <item quantity="other">sincronizado hace %d horas</item>
     </plurals>
     <plurals name="sync_status_time_days">
-        <item quantity="one">synchronized %d day ago</item>
-        <item quantity="other">synchronized %d days ago</item>
+        <item quantity="one">sincronizado hace %d día</item>
+        <item quantity="other">sincronizado hace %d días</item>
     </plurals>
-    <string name="sync_status">Synchronization status</string>
-    <string name="sync_status_last">Last successful synchronization:</string>
-    <string name="sync_status_last_failed">Last failed synchronization:</string>
-    <string name="sync_status_never">not yet synchronized</string>
-    <string name="sync_status_progress">synchronization is running</string>
-    <string name="sync_status_now">synchronized just now</string>
+    <string name="sync_status">Estado de sincronización</string>
+    <string name="sync_status_last">Última sincronización exitosa:</string>
+    <string name="sync_status_last_failed">Última sincronización fallida:</string>
+    <string name="sync_status_never">aún no sincronizado</string>
+    <string name="sync_status_progress">la sincronización está en curso</string>
+    <string name="sync_status_now">Sincronizado</string>
     <plurals name="sync_status_pending">
-        <item quantity="one">%d pending upload</item>
-        <item quantity="other">%d pending uploads</item>
+        <item quantity="one">%d pendiente</item>
+        <item quantity="other">%d pendientes</item>
     </plurals>
     <string name="sync_status_date_format">yyyy-MM-dd HH:mm:ss</string>
     <string name="short_datetime_format">MM/dd HH:mm</string>
-    <string name="first_scanned">First scanned: %s</string>
+    <string name="first_scanned">Primer escaneado: %s</string>
     <string name="datetime_format">%1$tY-%1$tm-%1$td %1$tH:%1$tM</string>
     <string name="ok">OK</string>
-    <string name="tutorial_setup">To get started, create a new device in the "Devices" section of your organizer account in the pretix backend. You will be then presented with a configuration QR code to scan.</string>
-    <string name="setup_error_legacy_qr_code">The QR code you scanned is for an old predecessor of this app. Please go to the "Devices" section in your pretix organizer account and create a new device there.</string>
-    <string name="setup_error_invalid_qr_code">The QR code you scanned is not a valid configuration code. Please make sure you created the code in the "Devices" section of a pretix organizer account.</string>
-    <string name="setup_error_version_too_high">The QR code you scanned is from a newer version of pretix than this app has been built for. Please check if you can get an update for this app!</string>
-    <string name="setup_progress">Initializing device…</string>
-    <string name="setup_error_request">Request rejected by server. Please double-check your input.</string>
-    <string name="setup_error_io">Connection error while trying to reach the server.</string>
-    <string name="setup_error_ssl">Security error while trying to reach the server.</string>
-    <string name="setup_error_server">Server error while trying to register the device.</string>
-    <string name="setup_error_response">The server returned an invalid response.</string>
-    <string name="setup_error_failed">The initial connection test failed.</string>
-    <string name="setup_error_permissions">pretixSCAN does not work properly without granting those permissions. Please restart the app.</string>
-    <string name="welcome_text">pretixSCAN is a event entry app that you can use to validate tickets that you sold through pretix.</string>
-    <string name="welcome_disclaimer1">I understand that personal data of attendees of my connected events will be stored on this device and I will secure the device properly.</string>
-    <string name="cont">CONTINUE</string>
+    <string name="tutorial_setup">Para comenzar, crea un nuevo dispositivo en la sección "Dispositivos" de tu cuenta de organizador en el backend de pretix. Luego se te presentará un código QR de configuración para escanear.</string>
+    <string name="setup_error_legacy_qr_code">El código QR que escaneaste es para un antiguo predecesor de esta aplicación. Por favor, ve a la sección "Dispositivos" en tu cuenta de organizador de pretix y crea un nuevo dispositivo allí.</string>
+    <string name="setup_error_invalid_qr_code">El código QR que escaneaste no es un código de configuración válido. Asegúrate de haber creado el código en la sección "Dispositivos" de una cuenta de organizador de pretix.</string>
+    <string name="setup_error_version_too_high">El código QR que escaneaste es de una versión más nueva de pretix para la que esta aplicación fue construida. ¡Por favor, verifica si puedes obtener una actualización para esta aplicación!</string>
+    <string name="setup_progress">Inicializando dispositivo…</string>
+    <string name="setup_error_request">Solicitud rechazada por el servidor. Por favor, verifica tu entrada.</string>
+    <string name="setup_error_io">Error de conexión al intentar alcanzar el servidor.</string>
+    <string name="setup_error_ssl">Error de seguridad al intentar alcanzar el servidor.</string>
+    <string name="setup_error_server">Error del servidor al intentar registrar el dispositivo.</string>
+    <string name="setup_error_response">El servidor devolvió una respuesta inválida.</string>
+    <string name="setup_error_failed">La prueba de conexión inicial falló.</string>
+    <string name="setup_error_permissions">pretixSCAN no funciona correctamente sin otorgar esos permisos. Por favor, reinicia la aplicación.</string>
+    <string name="welcome_text">pretixSCAN es una aplicación de entrada a eventos que puedes usar para validar boletos que vendiste a través de pretix.</string>
+    <string name="welcome_disclaimer1">Entiendo que los datos personales de los asistentes a mis eventos conectados se almacenarán en este dispositivo y aseguraré el dispositivo adecuadamente.</string>
+    <string name="cont">CONTINUAR</string>
     <string name="hint_url">URL</string>
     <string name="hint_token">Token</string>
-    <string name="dismiss">Dismiss</string>
-    <string name="settings_label_verification">Ticket verification</string>
-    <string name="settings_label_sync">Synchronization</string>
-    <string name="settings_label_ui">User interface</string>
-    <string name="settings_label_about">About this app</string>
-    <string name="settings_label_licenses">Author and licenses</string>
-    <string name="settings_label_device_camera">Use device camera</string>
-    <string name="settings_label_scan_offline">Offline scanning</string>
-    <string name="settings_label_auto_offline">Automatically turn offline mode on and off</string>
-    <string name="settings_label_auto_offline_help">If you select one of the times below, the app will automatically switch to an offline scan whenever an online scan takes longer than selected. Additionally, the app will fully switch to offline mode after multiple scans failed or took longer than selected. Once a connection has proven stable again, the app will switch back.</string>
+    <string name="dismiss">Descartar</string>
+    <string name="settings_label_verification">Verificación de boletos</string>
+    <string name="settings_label_sync">Sincronización</string>
+    <string name="settings_label_ui">Interfaz de usuario</string>
+    <string name="settings_label_about">Acerca de esta aplicación</string>
+    <string name="settings_label_licenses">Autor y licencias</string>
+    <string name="settings_label_device_camera">Usar cámara del dispositivo</string>
+    <string name="settings_label_scan_offline">Escaneo fuera de línea</string>
+    <string name="settings_label_auto_offline">Activar y desactivar modo fuera de línea automáticamente</string>
+    <string name="settings_label_auto_offline_help">Si seleccionas uno de los tiempos a continuación, la aplicación cambiará automáticamente a un escaneo fuera de línea siempre que un escaneo en línea tarde más de lo seleccionado. Además, la aplicación cambiará completamente al modo fuera de línea después de que múltiples escaneos hayan fallado o tardado más de lo seleccionado. Una vez que la conexión haya demostrado ser estable nuevamente, la aplicación cambiará de nuevo.</string>
     <string-array name="settings_valuelabels_auto_offline">
-        <item>Manual mode (off)</item>
-        <item>1 second or errors</item>
-        <item>2 seconds or errors</item>
-        <item>3 seconds or errors</item>
-        <item>5 seconds or errors</item>
-        <item>10 seconds or errors</item>
-        <item>15 seconds or errors</item>
-        <item>20 seconds or errors</item>
-        <item>Only errors or connection loss</item>
+        <item>Modo manual (apagado)</item>
+        <item>1 segundo o errores</item>
+        <item>2 segundos o errores</item>
+        <item>3 segundos o errores</item>
+        <item>5 segundos o errores</item>
+        <item>10 segundos o errores</item>
+        <item>15 segundos o errores</item>
+        <item>20 segundos o errores</item>
+        <item>Solo errores o pérdida de conexión</item>
     </string-array>
-    <string name="settings_summary_scan_offline">When scanning offline, your device will verify all input with its internal database instead with the server and synchronize its database with the server occasionally. This is more reliable, but allows a ticket to be scanned twice if you scan with multiple devices.</string>
-    <string name="settings_label_sounds">Play sounds</string>
-    <string name="settings_label_hide_names">Hide names and other personal information</string>
-    <string name="settings_label_hide_names_summary">Does not affect search, useful e.g. in combination with kiosk mode</string>
-    <string name="settings_label_badges">Badges</string>
-    <string name="preference_badges_twice">Print every badge twice</string>
-    <string name="settings_label_details">Details</string>
-    <string name="pref_unpaid_ask">Ask before checking in unpaid tickets</string>
-    <string name="pref_ignore_questions">Do not ask questions during check-in</string>
-    <string name="pref_unpaid_ask_summary">When the check-in list is set to include pending orders, this setting controls whether you will be asked before they are being checked in.</string>
-    <string name="question_validation_error">Some of your input could not be validated.</string>
-    <string name="question_input_required">This field is required.</string>
-    <string name="question_input_invalid">This input is not valid.</string>
-    <string name="yes">Yes</string>
-    <string name="cancel">Cancel</string>
-    <string name="status_redeemed">Redeemed</string>
-    <string name="status_unpaid">Unpaid</string>
-    <string name="status_canceled">Canceled</string>
-    <string name="status_valid">Valid</string>
-    <string name="status_empty">No search results have been found. Be sure to enter at least four characters.</string>
-    <string name="scan_result_valid">Valid ticket</string>
-    <string name="scan_result_exit">Exit recorded</string>
-    <string name="scan_result_used">Ticket already used</string>
-    <string name="scan_result_questions">Information required</string>
-    <string name="scan_result_invalid">Invalid ticket</string>
-    <string name="scan_result_product">Ticket type not valid here</string>
-    <string name="scan_result_unpaid">Ticket not paid</string>
-    <string name="scan_result_rules">Entry not allowed</string>
-    <string name="scan_result_ambiguous">Ticket code is ambiguous on list</string>
-    <string name="scan_result_revoked">Ticket code revoked/changed</string>
-    <string name="scan_result_unapproved">Order not approved</string>
-    <string name="scan_result_invalid_time">Ticket currently not valid</string>
-    <string name="scan_result_blocked">Ticket blocked</string>
-    <string name="scan_result_canceled">Order canceled</string>
-    <string name="error_sync_in_background">A synchronization is already running in the background.</string>
-    <string name="dialog_unpaid_title">Unpaid order</string>
-    <string name="dialog_unpaid_text">This ticket belongs to an order that has not yet been paid. Do you still want to check it in? This will not mark the order as paid.</string>
-    <string name="dialog_unpaid_retry">Check in anyways</string>
-    <string name="preference_badgeprint_enable">Enable badge printing</string>
-    <string name="preference_autobadgeprint_enable">Print badges automatically</string>
-    <string name="preference_badgeprint_install_pretixprint">Printing badges requires the separate pretixPRINT app. Do you want to install it?</string>
-    <string name="already_scanned">already scanned</string>
-    <string name="total_tickets_sold">total tickets sold</string>
-    <string name="ticket_attention">Attention, special ticket!</string>
-    <string name="hardware_scanner">Please press the hardware scan buttons of your device to scan.</string>
-    <string name="hardware_scanner_switch_to_camera">Use camera instead</string>
-    <string name="force_full_resync">Force a full synchronization</string>
-    <string name="settings_label_datawedge">Install DataWedge profile</string>
-    <string name="settings_label_version">Version</string>
-    <string name="settings_label_troubleshooting">Troubleshooting</string>
-    <string name="force_full_resync_help">This will not delete any of your local data, but it will force the next synchronization of every event to be a full synchronization, i.e. downloading all data again instead of only changed data.</string>
-    <string name="full_delete">Delete all local data and reset device</string>
-    <string name="full_delete_confirm">Do you really want to reset the device? You will need to pair it with the online system again.</string>
-    <string name="label_shop_active">Active</string>
-    <string name="label_shop_inactive">Shop deactivated</string>
-    <string name="settings_label_search_disable">Disable search</string>
-    <string name="settings_label_kioskmode">Kiosk mode</string>
-    <string name="settings_summary_kioskmode">Kiosk mode hides menus that are not supposed to be used in a self-service installation. Kiosk mode does not prevent users from exiting the app through system features. To access settings, you need to scan a QR code with your PIN.</string>
-    <string name="pin_protection">PIN protection</string>
-    <string name="pin_protection_pin">Set PIN</string>
-    <string name="pin_protection_enable">Enable PIN protection</string>
-    <string name="pin_protection_settings">Protect app settings</string>
-    <string name="pin_protection_statistics">Protect statistics</string>
-    <string name="pin_protection_switch_event">Protect event switch</string>
-    <string name="pin_protection_switch_mode">Protect mode switch</string>
-    <string name="pin_protection_enter">Enter PIN</string>
-    <string name="currently_inside">currently attending</string>
-    <string name="error_no_available_events">No current or future event could be found. Please check the dates and access rights of your events.</string>
-    <string name="event_select_calendar">Show calendar</string>
-    <string name="setup_grant_camera_permission">Please grant camera permission to use the QR Scanner</string>
+    <string name="settings_summary_scan_offline">Al escanear fuera de línea, tu dispositivo verificará todas las entradas con su base de datos interna en lugar de con el servidor y sincronizará su base de datos con el servidor ocasionalmente. Esto es más confiable, pero permite que un boleto se escanee dos veces si escaneas con múltiples dispositivos.</string>
+    <string name="settings_label_sounds">Reproducir sonidos</string>
+    <string name="settings_label_hide_names">Ocultar nombres y otra información personal</string>
+    <string name="settings_label_hide_names_summary">No afecta la búsqueda, útil por ejemplo en combinación con el modo quiosco</string>
+    <string name="settings_label_badges">Credenciales</string>
+    <string name="preference_badges_twice">Imprimir cada credencial dos veces</string>
+    <string name="settings_label_details">Detalles</string>
+    <string name="pref_unpaid_ask">Preguntar antes de registrar boletos no pagados</string>
+    <string name="pref_ignore_questions">No hacer preguntas durante el registro</string>
+    <string name="pref_unpaid_ask_summary">Cuando la lista de registro está configurada para incluir pedidos pendientes, esta configuración controla si se te preguntará antes de registrarlos.</string>
+    <string name="question_validation_error">Algunos de tus datos no pudieron ser validados.</string>
+    <string name="question_input_required">Este campo es obligatorio.</string>
+    <string name="question_input_invalid">Esta entrada no es válida.</string>
+    <string name="yes">Sí</string>
+    <string name="cancel">Cancelar</string>
+    <string name="status_redeemed">Canjeado</string>
+    <string name="status_unpaid">No pagado</string>
+    <string name="status_canceled">Cancelado</string>
+    <string name="status_valid">Válido</string>
+    <string name="status_empty">No se han encontrado resultados de búsqueda. Asegúrate de ingresar al menos cuatro caracteres.</string>
+    <string name="scan_result_valid">Boleto válido</string>
+    <string name="scan_result_exit">Salida registrada</string>
+    <string name="scan_result_used">Boleto ya usado</string>
+    <string name="scan_result_questions">Información requerida</string>
+    <string name="scan_result_invalid">Boleto inválido</string>
+    <string name="scan_result_product">Tipo de boleto no válido aquí</string>
+    <string name="scan_result_unpaid">Boleto no pagado</string>
+    <string name="scan_result_rules">Boleto inválido</string>
+    <string name="scan_result_ambiguous">El código del boleto es ambiguo en la lista</string>
+    <string name="scan_result_revoked">Código de boleto revocado/cambiado</string>
+    <string name="scan_result_unapproved">Pedido no aprobado</string>
+    <string name="scan_result_invalid_time">Boleto actualmente no válido</string>
+    <string name="scan_result_blocked">Boleto bloqueado</string>
+    <string name="scan_result_canceled">Pedido cancelado</string>
+    <string name="error_sync_in_background">Ya se está ejecutando una sincronización en segundo plano.</string>
+    <string name="dialog_unpaid_title">Pedido no pagado</string>
+    <string name="dialog_unpaid_text">Este boleto pertenece a un pedido que aún no ha sido pagado. ¿Aún quieres registrarlo? Esto no marcará el pedido como pagado.</string>
+    <string name="dialog_unpaid_retry">Registrar de todos modos</string>
+    <string name="preference_badgeprint_enable">Habilitar impresión de credenciales</string>
+    <string name="preference_autobadgeprint_enable">Imprimir credenciales automáticamente después de un escaneo exitoso</string>
+    <string name="preference_badgeprint_install_pretixprint">La impresión de credenciales requiere la aplicación separada pretixPRINT. ¿Quieres instalarla?</string>
+    <string name="already_scanned">ya escaneado</string>
+    <string name="total_tickets_sold">total de boletos vendidos</string>
+    <string name="ticket_attention">¡Atención, boleto especial!</string>
+    <string name="hardware_scanner">Por favor, presiona los botones de escaneo de hardware de tu dispositivo para escanear.</string>
+    <string name="hardware_scanner_switch_to_camera">Usar cámara en su lugar</string>
+    <string name="force_full_resync">Forzar una sincronización completa</string>
+    <string name="settings_label_datawedge">Instalar perfil DataWedge</string>
+    <string name="settings_label_version">Versión</string>
+    <string name="settings_label_troubleshooting">Solución de problemas</string>
+    <string name="force_full_resync_help">Esto no eliminará ninguno de tus datos locales, pero forzará que la próxima sincronización de cada evento sea una sincronización completa, es decir, descargando todos los datos nuevamente en lugar de solo los datos cambiados.</string>
+    <string name="full_delete">Eliminar todos los datos locales y restablecer el dispositivo</string>
+    <string name="full_delete_confirm">¿Realmente quieres restablecer el dispositivo? Necesitarás emparejarlo nuevamente con el sistema en línea.</string>
+    <string name="label_shop_active">Activo</string>
+    <string name="label_shop_inactive">Tienda desactivada</string>
+    <string name="settings_label_search_disable">Desactivar búsqueda</string>
+    <string name="settings_label_kioskmode">Modo quiosco</string>
+    <string name="settings_summary_kioskmode">El modo quiosco oculta menús que no se supone que se usen en una instalación de autoservicio. El modo quiosco no impide que los usuarios salgan de la aplicación a través de funciones del sistema. Para acceder a la configuración, necesitas escanear un código QR con tu PIN.</string>
+    <string name="pin_protection">Protección con PIN</string>
+    <string name="pin_protection_pin">Establecer PIN</string>
+    <string name="pin_protection_enable">Habilitar protección con PIN</string>
+    <string name="pin_protection_settings">Proteger configuración de la aplicación</string>
+    <string name="pin_protection_statistics">Proteger estadísticas</string>
+    <string name="pin_protection_switch_event">Proteger cambio de evento</string>
+    <string name="pin_protection_switch_mode">Proteger cambio de modo</string>
+    <string name="pin_protection_enter">Ingresar PIN</string>
+    <string name="currently_inside">asistiendo actualmente</string>
+    <string name="error_no_available_events">No se pudo encontrar ningún evento actual o futuro. Por favor, verifica las fechas y los derechos de acceso de tus eventos.</string>
+    <string name="event_select_calendar">Mostrar calendario</string>
+    <string name="setup_grant_camera_permission">Por favor, otorga permiso para usar la cámara para el escáner QR</string>
     <string-array name="settings_valuelabels_auto_print_badges">
         <item>No, only when button is pressed</item>
         <item>Once, if not yet printed</item>
         <item>Always</item>
+        <item>Modo manual (apagado)</item>
+        <item>1 segundo o errores</item>
+        <item>2 segundos o errores</item>
+        <item>3 segundos o errores</item>
+        <item>5 segundos o errores</item>
+        <item>10 segundos o errores</item>
+        <item>15 segundos o errores</item>
+        <item>20 segundos o errores</item>
+        <item>Solo errores o pérdida de conexión</item>
     </string-array>
 </resources>

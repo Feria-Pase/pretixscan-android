@@ -52,6 +52,7 @@ import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
+import com.facebook.flipper.plugins.uidebugger.LogTag
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.module.SimpleModule
@@ -89,6 +90,7 @@ import java.nio.charset.Charset
 import java.security.MessageDigest
 import java.text.SimpleDateFormat
 import java.util.*
+import java.util.logging.Logger
 
 
 interface ReloadableActivity {
@@ -1156,7 +1158,17 @@ class MainActivity : AppCompatActivity(), ReloadableActivity, ScannerView.Result
             view_data.ticketAndVariationName.set(null)
         }
         if (!result.reasonExplanation.isNullOrBlank()) {
-            view_data.reasonExplanation.set(result.reasonExplanation)
+            Logger.getLogger(MainActivity::class.java.name).warning(result.reasonExplanation)
+            val reasonExplanation = result.reasonExplanation
+            if (!reasonExplanation.isNullOrBlank() && reasonExplanation.contains("número de entradas no es 0")) {
+                view_data.reasonExplanation.set("Boleto ya fue usado");
+            }
+            else if(!reasonExplanation.isNullOrBlank() && reasonExplanation.contains("Puerta de entrada equivocada")){
+                view_data.reasonExplanation.set("Lugar de escaneo equivocado.");
+            }
+            else{
+                view_data.reasonExplanation.set(reasonExplanation);
+            }
         } else {
             view_data.reasonExplanation.set(null)
         }
@@ -1357,8 +1369,8 @@ class MainActivity : AppCompatActivity(), ReloadableActivity, ScannerView.Result
         } else {
             getString(R.string.action_label_scantype_exit)
         }
-        menu.findItem(R.id.action_scantype).isVisible = conf.knownPretixVersion >= 30090001000
-        menu.findItem(R.id.action_stats).isVisible = !conf.offlineMode || conf.syncOrders
+ //       menu.findItem(R.id.action_scantype).isVisible = conf.knownPretixVersion >= 30090001000
+//        menu.findItem(R.id.action_stats).isVisible = !conf.offlineMode || conf.syncOrders
 
         val searchItem = menu.findItem(R.id.action_search)
         val searchView = searchItem?.actionView as SearchView

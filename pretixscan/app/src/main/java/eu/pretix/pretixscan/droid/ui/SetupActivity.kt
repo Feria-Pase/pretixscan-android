@@ -4,6 +4,7 @@ import android.Manifest
 import android.app.ProgressDialog
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -58,6 +59,8 @@ class SetupActivity : AppCompatActivity(), ScannerView.ResultHandler {
         binding = ActivitySetupBinding.inflate(layoutInflater)
         setContentView(binding.root)
         conf = AppConfig(this)
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(this, R.color.pretix_brand_green)))
+        window.statusBarColor = ContextCompat.getColor(this, R.color.pretix_brand_green)
 
         checkPermission(Manifest.permission.CAMERA, PERMISSIONS_REQUEST_CAMERA)
         if (dataWedgeHelper.isInstalled) {
