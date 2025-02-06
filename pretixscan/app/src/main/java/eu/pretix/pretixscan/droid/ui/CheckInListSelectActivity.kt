@@ -164,7 +164,7 @@ class CheckInListSelectActivity : MorphingDialogActivity() {
         if (conf.multiEventMode || conf.knownPretixVersion < 40120001001) { // 4.12.0.dev1
             binding.cbMultievent.visibility = View.GONE
         } else {
-            binding.cbMultievent.visibility = View.VISIBLE
+            binding.cbMultievent.visibility = View.GONE
         }
     }
 

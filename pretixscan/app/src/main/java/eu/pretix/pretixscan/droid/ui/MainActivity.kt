@@ -1158,9 +1158,9 @@ class MainActivity : AppCompatActivity(), ReloadableActivity, ScannerView.Result
             view_data.ticketAndVariationName.set(null)
         }
         if (!result.reasonExplanation.isNullOrBlank()) {
-            Logger.getLogger(MainActivity::class.java.name).warning(result.reasonExplanation)
+            Logger.getLogger(MainActivity::class.java.name).warning(result.message+" - "+result.isCheckinAllowed+" - "+result.reasonExplanation)
             val reasonExplanation = result.reasonExplanation
-            if (!reasonExplanation.isNullOrBlank() && reasonExplanation.contains("número de entradas no es 0")) {
+            if (!reasonExplanation.isNullOrBlank() && reasonExplanation.contains("número de entradas no es ")) {
                 view_data.reasonExplanation.set("Boleto ya fue usado");
             }
             else if(!reasonExplanation.isNullOrBlank() && reasonExplanation.contains("Puerta de entrada equivocada")){
@@ -1374,7 +1374,7 @@ class MainActivity : AppCompatActivity(), ReloadableActivity, ScannerView.Result
 
         val searchItem = menu.findItem(R.id.action_search)
         val searchView = searchItem?.actionView as SearchView
-        searchItem.isVisible = !conf.searchDisabled
+        searchItem.isVisible = false //!conf.searchDisabled
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 if (query.isEmpty()) {

@@ -37,7 +37,7 @@
     <string name="operation_select_event">Seleccionar evento</string>
     <string name="operation_select_events">Seleccionar eventos</string>
     <string name="events_selected">%s eventos seleccionados</string>
-    <string name="operation_select_checkinlist">Seleccionar lista de registro</string>
+    <string name="operation_select_checkinlist">Seleccionar permiso</string>
     <string name="settings_label_auto_sync">Sincronización automática</string>
     <string name="settings_label_orders_sync">Descargar pedidos</string>
     <string name="settings_summary_orders_sync">Sin esta opción, pretixSCAN no descargará datos de pedidos y no podrá escanear boletos fuera de línea con la configuración predeterminada de pretix.</string>
